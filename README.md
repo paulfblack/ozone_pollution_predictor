@@ -1,5 +1,5 @@
 # Ground Level Ozone Pollution Prediction
-This project attempts to predict ground level ozone pollution in the L.A. area using linear regression modeling and weather related data. This was done as part of a 2 week introduction to linear regression modeling during my 12 week stint at Metis' data science bootcamp in Chicago. Data was collected from wunderground.org and the EPA looking specifically at data pertaining to Los Angeles California from 2005 to 2016. The goal of this project was to teach students to seek out and collect their own data from the web and to expose data science students to machine learning techniques. 
+This project attempts to predict ground level ozone pollution in the L.A. area using linear regression modeling and weather related data. This was done as part of a 2 week introduction to linear regression modeling during my 12 week stint at Metis' data science bootcamp in Chicago. The goal of this project was to teach students to seek out and collect their own data from the web and to expose data science students to machine learning techniques. 
   
 **Tools Used:** BS4, Selenium, SKLearn, StatsModels, MatPlotLib, Seaborn, Pandas.  
 
@@ -25,3 +25,7 @@ The historical weather pages of Weather Underground do not list UV index data an
 ## Linear Regression Model  
   
 The Linear Regression model for this project comes from SKLearns [linear model](http://scikit-learn.org/stable/modules/linear_model.html) library. It was fit using ridge regression and scored with 10 fold cross validation. Features with P values of greater than .05 were removed from the data and for features with multiple measurements (e.g. humidity, wind, and temperature) only the feature shown to be most predictive was kept. This served to limit the effects of multicollinearity in a set of features that are intrinsically related. The final features used in the model were: average humidity, dew point, max wind gust speed, min. temperature, precipitation, sea level pressure, overall condition of day (UV proxy), and total length of daylight. In the end, this model accounted for 54% of variability in ground level ozone pollution. In part this lack of predictability is attributed to the naive nature of the UV radiation proxy feature design and the reliance on purely weather data. Incorporating traffic data and industrial processing is predicted to account for higher level of variation. 
+
+## Repository Layout  
+  
+The functions used for this project can be found in the python file under the predictor functions folder. I have also included the final version of the Jupyter Notebook used in model analysis and scoring as well as the pdf of my presentation slides. 
