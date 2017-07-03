@@ -28,4 +28,4 @@ The Linear Regression model for this project comes from SKLearns [linear model](
 
 ## Repository Layout  
   
-The functions used for this project can be found in the python file under the predictor functions folder. I have also included the final version of the Jupyter Notebook used in model analysis and scoring as well as the pdf of my presentation slides. 
+The functions used for this project can be found in the [python file](ozone_pollution_predictor/ozone_predictor_functions/ozone_predictor_functions.py) under the predictor functions folder. I have also included the final version of the [Jupyter Notebook](ozone_pollution_predictor/ipynb/ozone_predictor.ipynb) used in model analysis and scoring as well as the pdf of my presentation slides. 
